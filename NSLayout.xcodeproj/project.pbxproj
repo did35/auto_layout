@@ -13,6 +13,7 @@
 		630183D8248BB89F00127343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630183D6248BB89F00127343 /* Main.storyboard */; };
 		630183DA248BB8A000127343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630183D9248BB8A000127343 /* Assets.xcassets */; };
 		630183DD248BB8A000127343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630183DB248BB8A000127343 /* LaunchScreen.storyboard */; };
+		63C61D77248CC3F0003EBE29 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C61D76248CC3F0003EBE29 /* CustomButton.swift */; };
 		63E5BA1E248BD0E4004FC3CA /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E5BA1D248BD0E4004FC3CA /* screenshot.png */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		630183D9248BB8A000127343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		630183DC248BB8A000127343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		630183DE248BB8A000127343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C61D76248CC3F0003EBE29 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		63E5BA1D248BD0E4004FC3CA /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 		630183E6248BB94800127343 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63C61D76248CC3F0003EBE29 /* CustomButton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C61D77248CC3F0003EBE29 /* CustomButton.swift in Sources */,
 				630183D5248BB89F00127343 /* ViewController.swift in Sources */,
 				630183D1248BB89F00127343 /* AppDelegate.swift in Sources */,
 				630183D3248BB89F00127343 /* SceneDelegate.swift in Sources */,
