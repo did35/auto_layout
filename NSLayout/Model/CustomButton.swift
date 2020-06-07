@@ -22,18 +22,22 @@ class CustomButton: UIButton {
         super.init(coder: aCoder)
     }
     
+    func constraints(button: UIButton, view: UIView, constant: CGFloat) {
+        NSLayoutConstraint.activate([
+            button.widthAnchor.constraint(equalToConstant: 60),
+            button.heightAnchor.constraint(equalToConstant: 30),
+            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            button.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: constant)
+        ])
+    }
+    
     func setButton1(title: String, view: UIView) {
         let button1 = UIButton(frame: .zero)
         button1.setBackgroundImage(UIImage(named: title), for: .normal)
         button1.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(button1)
         view.bringSubviewToFront(button1)
-        NSLayoutConstraint.activate([
-            button1.widthAnchor.constraint(equalToConstant: 60),
-            button1.heightAnchor.constraint(equalToConstant: 30),
-            button1.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button1.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -40)
-        ])
+        constraints(button: button1, view: view, constant: -40)
         self.button1 = button1
     }
     
@@ -43,12 +47,7 @@ class CustomButton: UIButton {
         button2.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(button2)
         view.bringSubviewToFront(button2)
-        NSLayoutConstraint.activate([
-            button2.widthAnchor.constraint(equalToConstant: 60),
-            button2.heightAnchor.constraint(equalToConstant: 30),
-            button2.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button2.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
+        constraints(button: button2, view: view, constant: 0)
         self.button2 = button2
     }
     
@@ -58,12 +57,7 @@ class CustomButton: UIButton {
         button3.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(button3)
         view.bringSubviewToFront(button3)
-        NSLayoutConstraint.activate([
-            button3.widthAnchor.constraint(equalToConstant: 60),
-            button3.heightAnchor.constraint(equalToConstant: 30),
-            button3.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button3.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 40)
-        ])
+        constraints(button: button3, view: view, constant: 40)
         self.button3 = button3
     }
     

@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     // MARK: - LoadView
     override func loadView() {
         super.loadView()
-        
         let testView = UIView(frame: .zero)
         testView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(testView)
@@ -29,14 +28,13 @@ class ViewController: UIViewController {
             testView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
         ])
         self.testView = testView
+        
         customButton.setButton1(title: "acButton", view: testView)
         customButton.setButton2(title: "dcButton", view: testView)
         customButton.setButton3(title: "stbyButton", view: testView)
-    
     }
     
     // MARK: - ViewDidLoad
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         testView.backgroundColor = .red
